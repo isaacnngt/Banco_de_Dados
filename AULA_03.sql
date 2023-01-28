@@ -5,17 +5,19 @@ valor numeric (10,2),
 data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE IF NOT EXISTS public.vendedor_tb(
-id_vendedor SERIAL PRIMARY KEY,
-nome varchar(45),
-id_equipe integer not null,
-data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
 
 CREATE TABLE IF NOT EXISTS public.equipe_tb(
 id_equipe SERIAL PRIMARY KEY,
 desc_equipe varchar(45),
 data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS public.vendedor_tb(
+id_vendedor SERIAL PRIMARY KEY,
+nome varchar(45),
+id_equipe integer not null,
+data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (id_equipe) REFERENCES equipe_tb (id_equipe)
 );
 
 CREATE TABLE IF NOT EXISTS public.venda_tb(
