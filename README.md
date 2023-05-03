@@ -1,6 +1,7 @@
 # Intro
 
 Professor: Isaac Nunes - UFRPE -
+
 Olá alunos,
 
 Bem-vindos ao módulo de banco de dados! Neste módulo, vamos aprender sobre bancos de dados relacionais e como usar o PostgreSQL, um dos sistemas de gerenciamento de bancos de dados mais populares do mercado.
