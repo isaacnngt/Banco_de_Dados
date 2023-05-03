@@ -1,0 +1,37 @@
+create table equipe_tb (
+
+id_equipe SERIAL PRIMARY key,
+desc_equipe varchar(80),
+data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+create table produto_tb (
+
+id_produto SERIAL PRIMARY key,
+desc_produto varchar(80),
+valor numeric (10,2),
+data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+create table vendedor_tb (
+
+id_vendedor SERIAL PRIMARY key,
+nome varchar(80),
+id_equipe integer,
+data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (id_equipe) REFERENCES equipe_tb (id_equipe)
+);
+
+create table venda_tb (
+
+id_venda SERIAL PRIMARY key,
+id_vendedor integer,
+id_produto integer,
+id_equipe integer,
+data_inclusao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (id_vendedor) REFERENCES vendedor_tb (id_vendedor),
+FOREIGN KEY (id_produto) REFERENCES produto_tb (id_produto),
+FOREIGN KEY (id_equipe) REFERENCES equipe_tb (id_equipe)
+);
+
+
