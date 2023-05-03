@@ -12,7 +12,7 @@ Com a conclusão deste módulo, você terá uma base sólida em bancos de dados 
 
 # Quem é o professor?
 Professor: Isaac Nunes 
-- Cursando(2023) Licienciatura Plena em Computação na UFRPE.
+- Cursando(2023) Licenciatura Plena em Computação na UFRPE.
 - Formado em Segurança da Informação pela FAM (Faculdade das Américas).
 - Pós Graduado em Análise e Projeto de Software pela Faculdade FOCUS.
 - Pós Graduado em Business intelligence, Big Data e Inteligência artificial pela Faculdade FOCUS.
