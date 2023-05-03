@@ -26,3 +26,7 @@ Link de Download do PostgreSQL: https://www.enterprisedb.com/downloads/postgres-
 Link de Download do SGBD Dbeaver (versão gratuita): https://dbeaver.io/download/ 
 
 Link do Drive JDBC Postgresql: https://jdbc.postgresql.org/download/
+
+# Extra Bônus - YOUTUBE
+Playlist do youtube contendo de forma simples e objetiva o conteúdo principal da programação orientada objeto em Java
+Link.: https://youtube.com/playlist?list=PLzsBLiR-m8_zwrEBNutLOLyVYxs1NpxEl
