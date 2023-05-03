@@ -1,0 +1,20 @@
+--01 Faça um select a partir da tabela cliente_transacoes que traga a média dos valores das transações efetuadas pelo banco de numero 247.
+--1.1 - O resultado deverá ser exibido com duas casas decimais sem arredondamento. 
+--1.2 - Atribua um apelido a coluna do select de "media_total"
+
+-- 02 - ordene de forma decrescente (maior para o menor) os valores de transações do banco de numero 247 na tabela "cliente_trasacoes"
+
+-- 03 - Faça um select a partir da tabela cliente_transacoes que agrupe pelo campo "banco_numero" e mostre a quantidade de registros existentes por banco:
+--Dica: Utilizar a função "count(*)" para realizar essa contagem geral. 
+--Dica 2: No seu select deverá ser exibida duas colunas: uma com o código do banco e outra com a quantidade de registros
+
+--04 Faça um select a partir da tabela cliente_transacoes que agrupe pelo campo "banco_numero" e mostre a quantidade de registros existentes por banco,PORÉM DEVERÁ SER EXIBIDO  os bancos cuja a quantidade de registro seja maior que 100.
+-- Dica: Utilizar a função "count(*)" para realizar essa contagem geral. 
+-- Dica 2: No seu select deverá ser exibida duas colunas: uma com o código do banco e outra com a quantidade de registros
+-- Dica 3: Utilizar a função de agrupamento HAVING para poder indicar os bancos que têm mais de 100 registros
+
+-- 05 Faça um select a partir da tabela Banco que mostre todos os bancos que comecem pela letra "A". 
+
+-- 06 Faça um select a partir da tabela Banco que mostre todos os bancos cujo seu número de identificação está entre 200 e 300. Após oderne os mesmo em 
+
+-- 07 Faça uma select que traga APENAS em seu resultado os banco de numero 40, 75, 748, 237, 249 e 76. Após ordene de forma crescente.
