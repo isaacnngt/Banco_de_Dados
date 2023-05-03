@@ -29,4 +29,4 @@ Link do Drive JDBC Postgresql: https://jdbc.postgresql.org/download/
 
 # Extra Bônus - YOUTUBE
 Playlist do youtube contendo de forma simples e objetiva o conteúdo principal da programação orientada objeto em Java
-Link.: https://youtube.com/playlist?list=PLzsBLiR-m8_zwrEBNutLOLyVYxs1NpxEl
+https://youtube.com/playlist?list=PLzsBLiR-m8_zwrEBNutLOLyVYxs1NpxEl
