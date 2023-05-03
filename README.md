@@ -1,8 +1,15 @@
 # Intro
 
 Professor: Isaac Nunes - UFRPE -
-Neste módulo aprenderemos um pouco de Banco da Dados e suas integrações com o Java.
+Olá alunos,
 
+Bem-vindos ao módulo de banco de dados! Neste módulo, vamos aprender sobre bancos de dados relacionais e como usar o PostgreSQL, um dos sistemas de gerenciamento de bancos de dados mais populares do mercado.
+
+Durante as aulas, vamos explorar as principais funcionalidades do PostgreSQL e aprender a criar, manipular e consultar dados em uma tabela. Vamos aprender a escrever consultas SQL para recuperar informações específicas de uma tabela e usar funções agregadas para resumir informações.
+
+Além disso, vamos aprender a integrar o PostgreSQL com Java e construir aplicações CRUD (Create, Read, Update, Delete) que permitam enviar e manipular dados do banco de dados.
+
+Com a conclusão deste módulo, você terá uma base sólida em bancos de dados relacionais e será capaz de aplicar esse conhecimento na construção de aplicações práticas.
 # Downloads importantes
 
 Link de Download do PostgreSQL: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
