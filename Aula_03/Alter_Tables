@@ -1,0 +1,48 @@
+create table carro_tb (
+
+id_carro serial primary key,
+desc_carro varchar(80),
+valor double precision,
+data_inclusao timestamp not null default current_timestamp
+)
+
+select * from public.CARRO_TB
+
+-- ALTERAR NOME DE COLUNA
+ALTER TABLE carro_tb
+RENAME COLUMN des_carro
+TO desC_carro;
+
+-- ALTERAR UM TABELA ADICIONA +1 COLUNA
+ALTER TABLE carro_tb 
+ADD COLUMN sn_ativo char(1);
+
+-- ALTERAR UMA TABELA REMOVENDO UMA COLUNA
+ALTER TABLE carro_tb 
+DROP COLUMN sn_ativo;
+
+-- ALTERAR UMA ESTRUTURA ADICIONANDO RESTRICOES
+
+ --Adicionando uma checagem
+ALTER TABLE carro_tb 
+ADD CHECK ((sn_ativo = 'N') or (sn_ativo = 'S') or (sn_ativo = 'n') or (sn_ativo = 'S'));
+ALTER TABLE carro_tb ADD CHECK (UPPER(sn_ativo) IN ('N', 'S'));
+insert into CARRO_TB (desc_carro, valor, sn_ativo) values ('Fiat Argo', 60000, 'S');
+
+
+ -- Adicionando UNIQUE -- pODE SER NULL
+ALTER TABLE CARRO_TB ADD CONSTRAINT unq_desc_carro_tb UNIQUE (desc_carro);
+insert into CARRO_TB (desc_carro, valor, sn_ativo) values ('Fiat Argo', 60000, 'S');
+
+ -- Adicionar uma FOREIGN KEY
+ALTER TABLE CARRO_TB ADD FOREIGN KEY (fk_grupo_produtos) REFERENCES grupo_produtos;
+
+-- REMOVER UMA RESTRIÇÃO
+ALTER TABLE CARRO_TB DROP CONSTRAINT unq_desc_carro_tb;
+
+-- MUDAR O TIPO DE UMA COLUNA
+ALTER TABLE CARRO_TB ALTER COLUMN VALOR TYPE numeric(10,2);
+
+-- MUDAR O NOME DA TABELA
+ALTER TABLE CARRO_TB RENAME TO CARRO_TBB;
+
